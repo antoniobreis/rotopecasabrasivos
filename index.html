@@ -4,7 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rotopeças Abrasivos — Soluções em Jateamento</title>
-  <meta name="description" content="Especialistas em configuração de máquinas de jateamento e fornecimento de granalhas de inox. Do diagnóstico ao abrasivo perfeito." />
+  <meta name="description" content="A solução completa em jateamento: Do diagnóstico da máquina ao abrasivo perfeito." />
+  
+  <!-- Meta Tags SEO -->
+  <meta name="keywords" content="jateamento, granalha, abrasivo, inox, fundição, joinville, santa catarina, granalha de aço, jateamento industrial" />
+  <meta name="author" content="Rotopeças Abrasivos Ltda" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="pt-BR" />
+  <meta name="geo.region" content="BR-SC" />
+  <meta name="geo.placename" content="Joinville" />
+  <meta name="icbm" content="-26.23172587705967, -48.83363782458384" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://rotopecasabrasivos.com.br/" />
+  <meta property="og:title" content="Rotopeças Abrasivos - Especialistas em Jateamento" />
+  <meta property="og:description" content="A solução completa em jateamento: Do diagnóstico da máquina ao abrasivo perfeito." />
+  <meta property="og:image" content="https://rotopecasabrasivos.com.br/assets/logo-rotopecas.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Rotopeças Abrasivos" />
+  <meta property="og:locale" content="pt_BR" />
+  
+  <!-- WhatsApp -->
+  <meta property="og:whatsapp" content="+5547984059874" />
+  
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -80,7 +105,7 @@
     <div class="abordagem">
       <div class="abordagem__image abordagem__image--relative">
         <div class="img-placeholder img-placeholder--height-460">
-          <img src="assets/equipe-especialista.png" alt="Equipe Especialista">
+          <img src="assets/equipe-especialista.png" alt="Equipe Especialista" loading="lazy">
         </div>
       </div>
 
@@ -177,7 +202,7 @@
   <footer class="footer">
     <div class="footer__top">
       <div class="footer__brand">
-        <img src="assets/logo-rotopecas.png" alt="Rotopeças Abrasivos" style="height: 90px;">
+        <img src="assets/logo-rotopecas.png" alt="Rotopeças Abrasivos" style="height: 90px;" loading="lazy">
         <div>
           <p>Especialistas em jateamento industrial. Do diagnóstico completo da sua máquina ao abrasivo perfeito para sua fundição.</p>
         </div>
@@ -189,6 +214,7 @@
           <a href="solucoes.html">Soluções</a>
           <a href="produtos.html">Produtos</a>
           <a href="contato.html">Contato</a>
+          <a href="privacidade.html">Política de Privacidade</a>
         </div>
       </div>
       <div>
@@ -208,10 +234,120 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <span>© 2026 Rotopeças Abrasivos Ltda. Todos os direitos reservados.</span>
-      <span>CNPJ: XX.XXX.XXX/0001-XX · Joinville/SC</span>
+      <span>© <span id="ano-atual"></span> Rotopeças Abrasivos Ltda. Todos os direitos reservados.</span>
+      <span>CNPJ: 58.509.427/0001-08 · Joinville/SC</span>
     </div>
   </footer>
+
+  <!-- ===== BANNER DE CONSENTIMENTO DE COOKIES ===== -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-banner__content">
+      <div class="cookie-banner__text">
+        <p>Utilizamos cookies para melhorar a sua experiência no site. Ao continuar navegando, você concorda com a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+      </div>
+      <div class="cookie-banner__actions">
+        <button id="cookie-accept" class="btn btn--red">Aceitar</button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+  /* Banner de Cookies */
+  .cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(35, 31, 31, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    padding: 20px;
+    border-top: 3px solid var(--red);
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .cookie-banner__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .cookie-banner__text {
+    flex: 1;
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .cookie-banner__text a {
+    color: var(--orange);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .cookie-banner__actions {
+    flex: 0;
+  }
+
+  .cookie-banner__actions .btn {
+    padding: 12px 24px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 2px;
+    min-width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cookie-banner.hidden {
+    display: none;
+  }
+
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .cookie-banner__content {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .cookie-banner__text {
+      font-size: 0.9rem;
+    }
+
+    .cookie-banner__actions .btn {
+      width: 100%;
+      max-width: 280px;
+    }
+  }
+  </style>
+
+  <script>
+  // Banner de Cookies
+  document.addEventListener('DOMContentLoaded', function() {
+    const cookieBanner = document.getElementById('cookie-banner');
+    const acceptButton = document.getElementById('cookie-accept');
+    
+    // Verificar se já foi aceito
+    if (localStorage.getItem('cookieConsent') === 'accepted') {
+      cookieBanner.classList.add('hidden');
+      return;
+    }
+    
+    // Aceitar cookies
+    acceptButton.addEventListener('click', function() {
+      localStorage.setItem('cookieConsent', 'accepted');
+      cookieBanner.classList.add('hidden');
+    });
+  });
+  </script>
 
 </body>
 </html>

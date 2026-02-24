@@ -19,3 +19,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Atualizar ano dinamicamente no rodapé
+document.addEventListener('DOMContentLoaded', function() {
+  const anoAtual = document.getElementById('ano-atual');
+  if (anoAtual) {
+    anoAtual.textContent = new Date().getFullYear();
+  }
+});
