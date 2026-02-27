@@ -946,6 +946,30 @@ ul { list-style: none; }
 .footer__bottom a:hover { color: var(--orange); }
 
 /* =========================================
+   FOOTER SIGNATURE
+   ========================================= */
+.footer__signature {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.4;
+}
+
+.footer__signature a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  transition: color var(--transition);
+  font-weight: 500;
+}
+
+.footer__signature a:hover {
+  color: var(--orange);
+}
+
+/* =========================================
    ANIMATIONS
    ========================================= */
 @keyframes fadeUp {
