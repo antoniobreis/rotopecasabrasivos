@@ -114,7 +114,7 @@
         <h2 class="section__title">Não somos apenas <em>revendedores.</em></h2>
         <p class="section__subtitle">
           Nossa equipe é formada por especialistas com profundo conhecimento na
-          fabricação de máquinas de jateamento — o que nos permite entregar muito mais
+          manutenção e configuração de máquinas de jateamento — o que nos permite entregar muito mais
           do que o abrasivo: entregamos uma solução integrada e otimizada para a sua operação.
         </p>
 
@@ -138,6 +138,13 @@
             <div class="abordagem__point-text">
               <strong>Abrasivo Perfeitamente Indicado</strong>
               <p>Recomendamos a granalha ideal (formato e liga) para cada aplicação específica — inox ou alumínio.</p>
+            </div>
+          </div>
+          <div class="abordagem__point">
+            <div class="abordagem__point-icon">4</div>
+            <div class="abordagem__point-text">
+              <strong>SUPORTE CONTÍNUO</strong>
+              <p>Acompanhamos sua operação com suporte técnico e manutenção preventiva.</p>
             </div>
           </div>
         </div>
@@ -167,10 +174,6 @@
       <div class="feature-card">
         <div class="feature-title">≥ 7,80</div>
         <div class="feature-subtitle">Densidade g/cm³</div>
-      </div>
-      <div class="feature-card">
-        <div class="feature-title">RP-0,2 a 1,4</div>
-        <div class="feature-subtitle">Granulometrias disponíveis</div>
       </div>
     </div>
 
@@ -214,7 +217,7 @@
         <div class="footer__col-title">Contato</div>
         <div class="footer__contact-item">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          <span>Rua Dorothovio do Nascimento, 2026<br/>Jardim Sofia · Joinville/SC · 89223-600</span>
+          <span>Rua Adolar Kasulke, 405<br/>Colégio Agrícola · Araquari/SC · 89245-000</span>
         </div>
         <div class="footer__contact-item">
           <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.18 19.79 19.79 0 012 2.18 2 2 0 014 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14v2.92z"/></svg>
@@ -228,7 +231,7 @@
     </div>
     <div class="footer__bottom">
       <span> Rotopeças Abrasivos Ltda. Todos os direitos reservados.</span>
-      <span>CNPJ: 58.509.427/0001-08 · Joinville/SC</span>
+      <span>CNPJ: 58.509.427/0001-08 · Araquari/SC</span>
     </div>
     <div class="footer__signature">
       Desenvolvido por <a href="https://soustack.com.br" target="_blank">Stack Soluções Digitais</a>
@@ -247,103 +250,5 @@
     </div>
   </div>
 
-  <style>
-  /* Banner de Cookies */
-  .cookie-banner {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(35, 31, 31, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 9999;
-    padding: 20px;
-    border-top: 3px solid var(--red);
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-  }
-
-  .cookie-banner__content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .cookie-banner__text {
-    flex: 1;
-    color: var(--white);
-    font-family: var(--font-body);
-    font-size: 0.95rem;
-    line-height: 1.5;
-  }
-
-  .cookie-banner__text a {
-    color: var(--orange);
-    text-decoration: underline;
-    font-weight: 500;
-  }
-
-  .cookie-banner__actions {
-    flex: 0;
-  }
-
-  .cookie-banner__actions .btn {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 2px;
-    min-width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
-  .cookie-banner.hidden {
-    display: none;
-  }
-
-  /* Responsivo */
-  @media (max-width: 768px) {
-    .cookie-banner__content {
-      flex-direction: column;
-      gap: 15px;
-      text-align: center;
-    }
-
-    .cookie-banner__text {
-      font-size: 0.9rem;
-    }
-
-    .cookie-banner__actions .btn {
-      width: 100%;
-      max-width: 280px;
-    }
-  }
-  </style>
-
-  <script>
-  // Banner de Cookies
-  document.addEventListener('DOMContentLoaded', function() {
-    const cookieBanner = document.getElementById('cookie-banner');
-    const acceptButton = document.getElementById('cookie-accept');
-    
-    // Verificar se já foi aceito
-    if (localStorage.getItem('cookieConsent') === 'accepted') {
-      cookieBanner.classList.add('hidden');
-      return;
-    }
-    
-    // Aceitar cookies
-    acceptButton.addEventListener('click', function() {
-      localStorage.setItem('cookieConsent', 'accepted');
-      cookieBanner.classList.add('hidden');
-    });
-  });
-  </script>
-
-</body>
+  </body>
 </html>
